@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// rcc:react class based components. if u want along with properties, use rccp
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+
+export default class App extends Component {
+  // what is this render function okay so I will tell you this render function will render the different methods inside of this okay render means loading the different methods or executing the different method that is inside of render method. basically, render will execute the different HTML tags.
+
+  // using API we can do fetch,get,set operations
+  
+  name="tanmai"; //creating an object
+  render() {
+    return (
+      <div>
+        hello {this.name}
+      </div>
+    )
+  }
 }
-
-export default App;
