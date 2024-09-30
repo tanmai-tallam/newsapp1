@@ -3,6 +3,8 @@
 import React, { Component } from 'react'
 import Navbar from './Components/Navbar';
 import News from './Components/News';
+// we have not written code for routing in navbar, so we should import some libraries , for tht we should npm install our react router dom
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 
 export default class App extends Component {
@@ -15,7 +17,7 @@ export default class App extends Component {
     return (
       <>
         <Navbar/>
-        <News/>
+        <News pageSize={5} country="us" category="general" />
       </>
     )
   }
